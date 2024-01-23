@@ -1,0 +1,15 @@
+
+body{
+    background-color: rgb(255, 200, 200);
+}
+
+.logo{
+    max-width: auto;
+    background-color:rgb(250, 240, 90);
+    align-items: center;
+}
+
+pre{
+    margin: auto;
+    color: rgb(16, 184, 184)
+}
