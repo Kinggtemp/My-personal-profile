@@ -1,16 +1,32 @@
 
 body{
-    background-color: rgb(255, 200, 200);
+    background-color: rgb(232, 248, 171);
+    margin-left: 10%;
+    margin-top: 5%;
+    
 }
 
 .logo{
-    max-width: auto;
-    background-color:rgb(250, 240, 90);
-    align-items: center;
+    max-width: 100%;
+    background-color: rgb(255, 255, 0);
+    float:left;
+    
+}
+
+.header{
+    max-width: 100%;
+    background-color: rgb(255, 255, 0);
+
 }
 
 pre{
-    margin: auto;
-    color: rgb(16, 184, 184)
+    color: rgb(0, 0, 0);
+    clear: both;
 }
 
+.imgbox{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
