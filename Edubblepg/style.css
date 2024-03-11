@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin-left: 5%;
+    margin-top: 5%;
+    background: linear-gradient(to right, rgb(0, 100, 250), rgb(0, 255, 0));
+    min-height: 100vh;
+}
+
+.logo {
+    max-width: 100%;
+    height: 280px;
+    background-color: rgb(255, 255, 0);
+    float: left;
+
+}
+
+.header {
+    max-width: 100%;
+    background: rgb(255, 255, 0);
+    overflow: auto;
+    height: 280px;
+}
+
+pre {
+    color: rgb(255, 255, 0);
+    clear: both;
+font-size: large;
+font-style:oblique
+}
+/* This is the Music player that follows the screen on the right */
+.player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    width: 334px;
+    background: transparent;
+}
+
+.player .imgbox {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.player .imgbox img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.player audio {
+    width: 100%;
+    outline: none;
+    width: 325px;
+    height: 50px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0px;
+}
+/* this is the videos in the header */
+.autoplayvid{
+    float: right;
+    background: transparent;
+    margin-right: 80px;
+    margin-top:8px;
+
+}
+/* This is the navigation bar at the top of the screen */
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 96%, 49%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+color: white;
+text-decoration: none;
+padding: 15px;
+display: block;
+text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(30, 255, 0);
+
+}
+
+.navbar li{
+    float: left;
+}
