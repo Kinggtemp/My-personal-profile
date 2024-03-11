@@ -36,3 +36,10 @@ text-align: center;
 .navbar li{
     float: left;
 }
+
+body {
+    margin-left: 10px;
+    margin-top: 5px;
+    background: linear-gradient(to right, rgb(0, 100, 250), rgb(0, 255, 0));
+    min-height: 100vh;
+}
