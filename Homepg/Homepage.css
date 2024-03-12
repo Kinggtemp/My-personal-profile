@@ -39,7 +39,7 @@ body{
 /* Line under text when hovering over */
 .Header ul li a:hover{
   position: relative;
-    color: #ffffff;
+    color: #000000;
     border-bottom: 1px solid black;
 }
 

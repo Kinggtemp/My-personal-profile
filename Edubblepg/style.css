@@ -81,12 +81,11 @@ audio::-webkit-media-controls-enclosure {
     background: transparent;
     margin-right: 80px;
     margin-top:8px;
-
 }
 /* This is the navigation bar at the top of the screen */
 .navbar ul{
     list-style-type: none;
-    background-color: transparent;
+    background-color: rgb(0, 0, 0);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -104,7 +103,7 @@ font-weight: 500;
 }
 
 /* This creates the Line transition when hovering over text */
-.navbar ul li a:hover{
+.navbar  ul li a:hover{
     position: relative;
       color: #ffffff;
       border-bottom: 1px solid rgb(0, 0, 0);
@@ -118,7 +117,7 @@ font-weight: 500;
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #000000;
+      background-color: #ffffff;
       transform-origin: bottom right;
       transition: transform 0.5s ease-out;
   }

@@ -42,8 +42,8 @@ body{
 /* Nav bar hover */
 .Header ul li a:hover{
     position: relative;
-      color: #ffffff;
-      border-bottom: 1px solid black;
+      color: #000000;
+      border-bottom: 1px solid rgb(0, 0, 0);
   }
   
   .Header ul li a::after{
@@ -152,7 +152,7 @@ font-weight: bold;
 
 /* this is the box size that contains all the writing and header when hovered over */
 .card:hover .intro{
-    height: 300px;
+    height: 350px;
     bottom: 163px;
     background: black;
 }
