@@ -37,8 +37,10 @@ body{
 }  
 
 .Header ul li a:hover{
-    background: #ffffff;
-    color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    transition: 0.5s;
 }
 
 .Header h1{
