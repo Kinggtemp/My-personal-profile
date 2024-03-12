@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin-left: 10px;
+    margin-top: 5px;
+    background: linear-gradient(to right, rgb(0, 100, 250), rgb(0, 255, 0));
+    min-height: 100vh;
+}
+
+h3, a{
+    color: #000000;
+    text-decoration-color: red;
+}
+
+
+.logo {
+    max-width: 100%;
+    height: 280px;
+    background-color: rgb(255, 255, 0);
+    float: left;
+
+}
+
+.header {
+    max-width: 100%;
+    background: rgb(255, 255, 0);
+    overflow: auto;
+    height: 280px;
+}
+
+
+
+pre {
+    color: rgb(255, 255, 0);
+font-size: 20px;
+font-style:oblique;
+}
+/* This is the Music player that follows the screen on the right */
+.player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    width: 334px;
+    background: transparent;
+}
+
+.player .imgbox {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.player .imgbox img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.player audio {
+    width: 100%;
+    outline: none;
+    width: 325px;
+    height: 50px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0px;
+}
+/* this is the videos in the header */
+.autoplayvid{
+    float: right;
+    background: transparent;
+    margin-right: 80px;
+    margin-top:8px;
+}
+/* This is the navigation bar at the top of the screen */
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar a{
+    width: 100%;
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding: 10px 40px;
+display: block;
+font-size:20px;
+font-weight: 500;
+}
+
+/* This creates the Line transition when hovering over text */
+.navbar  ul li a:hover{
+    position: relative;
+      color: #ffffff;
+      border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  
+  .navbar li a::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      transform-origin: bottom right;
+      transition: transform 0.5s ease-out;
+  }
+  
+  .navbar ul li a:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+
+  /* This makes the abt me, projects and contact stay on the left */
+.navbar li{
+   float: left;
+}
+/* This keeps my home button top left */
+.AO{
+ float: left;
+ font-style:oblique;
+}
+
+/* This keeps the sign buttons on the right */
+.Login{
+    float: right;
+}
