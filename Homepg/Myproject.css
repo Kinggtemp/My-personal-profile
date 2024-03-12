@@ -72,15 +72,6 @@ body{
     margin-top: 10%;
     margin-bottom: 20px;
 }
-/* commented out for now */
-/* .Header p{
-    text-align: center;
-    font-size: 18px;
-    width: 35%;
-    margin: auto;
-    color: #ffffff;
-    line-height: 1.7;
-} */
 
 @keyframes animate{
     0%{
