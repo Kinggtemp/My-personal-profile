@@ -24,7 +24,7 @@ h3, a{
 
 }
 
-.header {
+.heading {
     max-width: 100%;
     background: rgb(255, 255, 0);
     overflow: auto;
@@ -37,6 +37,7 @@ pre {
     color: rgb(255, 255, 0);
 font-size: 20px;
 font-style:oblique;
+
 }
 /* This is the Music player that follows the screen on the right */
 .player {
@@ -142,19 +143,73 @@ font-weight: 500;
     float: right;
 }
 
+/* Project cards */
 .container{
     display: flex;
 }
-
-.otherpg{
+/* card size */
+.card{
     height: 450px;
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
 }
 
-.otherpg img{
+/* Img sizing */
+.card img{
     height: 500px;
     width: 350px;
     border-radius: 3px;
 }
+
+/* This is the preview name on the card */
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 5px;
+    box-sizing: border-box;
+    position:relative;
+    bottom: 110px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.container h2{
+    margin: 10px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/* Writing within the card */
+.container p{
+    font-size: 20px;
+    margin: 20px;
+    max-width: 350px;
+    visibility: hidden;
+    opacity: 0;
+    color: #ffffff;
+}
+
+span{
+font-weight: bold;
+}
+
+/* Pointer */
+.card:hover{
+    cursor:pointer;
+}
+
+/* this is the box size that contains all the writing and header when hovered over */
+.card:hover .intro{
+    height: 350px;
+    bottom: 163px;
+    background: rgb(0, 0, 0);
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* This is to get rid of the underline when it becomes a URL */
