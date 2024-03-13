@@ -149,7 +149,7 @@ font-weight: 500;
 }
 /* card size */
 .card{
-    height: 450px;
+    height: 200px;
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
@@ -157,19 +157,19 @@ font-weight: 500;
 
 /* Img sizing */
 .card img{
-    height: 500px;
-    width: 350px;
+    height: 200px;
+    width: 200px;
     border-radius: 3px;
 }
 
 /* This is the preview name on the card */
 .intro{
-    height: 70px;
-    width: 350px;
+    height: 100px;
+    width: 200px;
     padding: 5px;
     box-sizing: border-box;
     position:relative;
-    bottom: 110px;
+    bottom: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: rgb(255, 255, 255);
     transition: .5s;
@@ -202,8 +202,8 @@ font-weight: bold;
 
 /* this is the box size that contains all the writing and header when hovered over */
 .card:hover .intro{
-    height: 350px;
-    bottom: 163px;
+    height: 100px;
+    bottom: 100px;
     background: rgb(0, 0, 0);
 }
 
