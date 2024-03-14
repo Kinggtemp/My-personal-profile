@@ -1,3 +1,119 @@
-*{
-    
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.Header ul {
+    height: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.Header ul li {
+    display: inline-block;
+    padding: 40px 15px;
+}
+
+.Header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+/* Line under text when hovering over */
+.Header ul li a:hover {
+    position: relative;
+    color: #000000;
+    border-bottom: 1px solid black;
+}
+
+.Header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.Header ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.Header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.Header p {
+    text-align: center;
+    font-size: 18px;
+    width: 35%;
+    margin: auto;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+
+/* The Whole page */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The background of the calculator */
+.calculator {
+    background: #3f3a52;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Buttons */
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Makes textbox full length of the display at the top */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+/* Textbox at the top for the display of numbers */
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 50px;
+    box-shadow: none;
+}
+
+form input.operator{
+    color: #ffee00;
 }
