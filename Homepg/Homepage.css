@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .Header {
@@ -16,6 +16,21 @@ body {
     animation: animate 30s ease infinite;
 }
 
+.name-container {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+  }
+  
+.Header h2{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+  
 .Header ul {
     height: 50px;
     display: flex;
@@ -31,9 +46,10 @@ body {
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px 10px;
-}
+  }
 
 /* Line under text when hovering over */
 .Header ul li a:hover {
@@ -63,14 +79,16 @@ body {
 .Header h1 {
     text-align: center;
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 10%;
     margin-bottom: 20px;
 }
 
 .Header p {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 35%;
     margin: auto;
     color: #ffffff;
@@ -90,3 +108,29 @@ body {
         background-position: 0 50%;
     }
 }
+
+:root{
+    --primary-color: #efefef;
+    --secondary-color: #212121;
+}
+
+#icon{
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+  }
+
+
+.linkedin-container {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+  }
+  
+  .fab.fa-linkedin {
+    font-size: 50px;
+    color: #a3a3a3;
+  }
+  

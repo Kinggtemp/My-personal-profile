@@ -21,6 +21,21 @@ body{
     animation: animate 30s ease infinite;
 }
 
+.name-container {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+  }
+  
+.Header h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
 .Header ul {
     height: 50px;
     display: flex;
@@ -36,9 +51,10 @@ body{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px 10px;
-}
+  }
 
 /* Line under text when hovering over */
 .Header ul li a:hover {
@@ -68,11 +84,14 @@ body{
 /* My project edit */
 .Header h1{
     text-align: center;
-    color: #fff;
-    font-size: 60px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 10%;
     margin-bottom: 20px;
 }
+
+
 
 @keyframes animate{
     0%{
@@ -85,6 +104,18 @@ body{
         background-position: 0 50%;
     }
 }
+
+.linkedin-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  
+  .fab.fa-linkedin {
+    font-size: 40px;
+    color: #a3a3a3;
+  }
+  
 
 /* Project cards */
 .container{
@@ -159,3 +190,4 @@ font-weight: bold;
     color: #fff;
     text-decoration: none;
 }
+
