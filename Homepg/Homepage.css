@@ -4,10 +4,7 @@
 }
 
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-
-.Header {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     z-index: 1;
     background: linear-gradient(-90deg, rgb(40, 0, 80), rgb(0, 0, 0), rgb(40, 0, 80), rgb(0, 0, 0));
     background-size: 400% 400%;
@@ -15,6 +12,15 @@ body {
     height: 100vh;
     animation: animate 30s ease infinite;
 }
+
+/*.Header {
+      z-index: 1;
+    background: linear-gradient(-90deg, rgb(40, 0, 80), rgb(0, 0, 0), rgb(40, 0, 80), rgb(0, 0, 0));
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation: animate 30s ease infinite; 
+}*/
 
 .name-container {
     position: absolute;
@@ -76,16 +82,16 @@ body {
     transform-origin: bottom left;
 }
 
-.Header h1 {
+.main h1 {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 10%;
     margin-bottom: 20px;
 }
 
-.Header p {
+.main p {
     text-align: center;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -109,28 +115,36 @@ body {
     }
 }
 
-:root{
-    --primary-color: #efefef;
-    --secondary-color: #212121;
-}
-
-#icon{
-    width: 50px;
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 60px;
-  }
-
 
 .linkedin-container {
     position: absolute;
-    top: 30px;
-    right: 150px;
+    top: 40px;
+    right: 210px;
   }
   
   .fab.fa-linkedin {
-    font-size: 50px;
+    font-size: 40px;
     color: #a3a3a3;
   }
   
+  .github-container {
+    position: absolute;
+    top: 40px;
+    right: 150px;
+  }
+  
+  .fa-brands.fa-github {
+    font-size: 40px;
+    color: #a3a3a3;
+  }
+
+  .email-container {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+  }
+  
+  .fa-solid.fa-envelope-circle-check {
+    font-size: 40px;
+    color: #a3a3a3;
+  }

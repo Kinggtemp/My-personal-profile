@@ -1,33 +1,38 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 1;
+    background: linear-gradient(-90deg, rgb(40, 0, 80), rgb(0, 0, 0), rgb(40, 0, 80), rgb(0, 0, 0));
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation: animate 30s ease infinite
 }
+
 /* animated background */
-.Header {
+/* .Header {
     z-index: 1;
     background: linear-gradient(-90deg, rgb(40, 0, 80), rgb(0, 0, 0), rgb(40, 0, 80), rgb(0, 0, 0));
     background-size: 400% 400%;
     width: 100%;
     height: 200vh;
     animation: animate 30s ease infinite;
-}
+} */
 
 .name-container {
     position: absolute;
     top: 30px;
     left: 60px;
-  }
-  
-.Header h2{
+}
+
+.Header h2 {
     text-align: center;
     color: #ffffff;
     font-size: 25px;
@@ -52,9 +57,9 @@ body{
     color: #ffffff;
     text-transform: uppercase;
     font-size: 22px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px 10px;
-  }
+}
 
 /* Line under text when hovering over */
 .Header ul li a:hover {
@@ -74,18 +79,18 @@ body{
     background-color: #ffffff;
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
-  }
-  
-  .Header ul li a:hover::after{
-      transform: scaleX(1);
-      transform-origin: bottom left;
-  }
-  
+}
+
+.Header ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /* My project edit */
-.Header h1{
+.Header h1 {
     text-align: center;
-    color: #ffffff;
-    font-size: 40px;
+    color: #fff;
+    font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 10%;
     margin-bottom: 20px;
@@ -93,14 +98,16 @@ body{
 
 
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         background-position: 0 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0 50%;
     }
 }
@@ -109,21 +116,22 @@ body{
     position: absolute;
     top: 30px;
     right: 30px;
-  }
-  
-  .fab.fa-linkedin {
+}
+
+.fab.fa-linkedin {
     font-size: 40px;
     color: #a3a3a3;
-  }
-  
+}
+
 
 /* Project cards */
-.container{
+.container {
     display: flex;
 
 }
+
 /* card size */
-.card{
+.card {
     height: 450px;
     margin: 50px;
     box-shadow: 5px 5px 20px black;
@@ -131,63 +139,170 @@ body{
 }
 
 /* Img sizing */
-.card img{
+.card img {
     height: 500px;
     width: 350px;
     border-radius: 3px;
 }
 
 /* This is the preview name on the card */
-.intro{
+.intro {
     height: 70px;
     width: 350px;
     padding: 5px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 163px;
+    bottom: 182px;
     background: rgba(0, 0, 0, 0.5);
     color: rgb(0, 0, 0);
     transition: .5s;
 }
 
-.container h2{
+.container h2 {
     margin: 10px;
     font-size: 25px;
 }
 
 /* Writing within the card */
-.container p{
+.container p {
     font-size: 20px;
-    margin: 20px;
+    margin: 5px;
     max-width: 350px;
     visibility: hidden;
     opacity: 0;
 }
 
-span{
-font-weight: bold;
+span {
+    font-weight: bold;
 }
 
 /* Pointer */
-.card:hover{
-    cursor:pointer;
+.card:hover {
+    cursor: pointer;
 }
 
 /* this is the box size that contains all the writing and header when hovered over */
-.card:hover .intro{
+.card:hover .intro {
     height: 350px;
-    bottom: 163px;
+    bottom: 182px;
     background: black;
+    width: 350px;
 }
 
-.card:hover p{
+.card:hover p {
     opacity: 1;
     visibility: visible;
 }
 
 /* This is to get rid of the underline when it becomes a URL */
-.intro a{
+.intro a {
     color: #fff;
     text-decoration: none;
 }
 
+.linkedin-container {
+    position: absolute;
+    top: 40px;
+    right: 210px;
+}
+
+.fab.fa-linkedin {
+    font-size: 40px;
+    color: #a3a3a3;
+}
+
+.github-container {
+    position: absolute;
+    top: 40px;
+    right: 150px;
+}
+
+.fa-brands.fa-github {
+    font-size: 40px;
+    color: #a3a3a3;
+}
+
+.email-container {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+}
+
+.fa-solid.fa-envelope-circle-check {
+    font-size: 40px;
+    color: #a3a3a3;
+}
+
+.seccontainer {
+    display: flex;
+
+}
+
+/* card size */
+.seccard {
+    height: 450px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+/* Img sizing */
+.seccard img {
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+/* This is the preview name on the card */
+.secintro {
+    height: 70px;
+    width: 350px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.seccontainer h2 {
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* Writing within the card */
+.seccontainer p {
+    font-size: 20px;
+    margin: 5px;
+    max-width: 350px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Pointer */
+.seccard:hover {
+    cursor: pointer;
+}
+
+/* this is the box size that contains all the writing and header when hovered over */
+.seccard:hover .intro {
+    height: 350px;
+    bottom: 10px;
+    background: black;
+}
+
+.seccard:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* This is to get rid of the underline when it becomes a URL */
+.secintro a {
+    color: #fff;
+    text-decoration: none;
+}
