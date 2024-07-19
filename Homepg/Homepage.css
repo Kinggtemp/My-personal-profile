@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 770px) {
   .hideOnMobile {
       display: none;
   }
@@ -26,32 +26,9 @@ body {
     animation: animate 30s ease infinite;
 }
 
-/*.Header {
-      z-index: 1;
-    background: linear-gradient(-90deg, rgb(40, 0, 80), rgb(0, 0, 0), rgb(40, 0, 80), rgb(0, 0, 0));
-    background-size: 400% 400%;
-    width: 100%;
-    height: 100vh;
-    animation: animate 30s ease infinite; 
-}*/
-
-/* .name-container {
-    position: absolute;
-    top: 30px;
-    left: 60px;
-  } */
-  
-/* .Header h2{
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 10%;
-    margin-bottom: 20px;
-} */
-  
 .Header li:first-child{
   margin-right: auto;
+  
 }
 
 .Header ul {
@@ -112,29 +89,28 @@ body {
     color: #ffffff;
     font-size: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 170px auto 0 auto;
-  max-width: 1350px;
+    margin: 0px 0px 5px;
+  max-width: 300px;
 }
 .intro h2 {
   text-align: left;
-  background: -webkit-linear-gradient(left, #ff3636fb, #e100ff, #ff0077);
+  background: -webkit-linear-gradient(left, #e64157, #ff00aa, #12c2e9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   font-size: 50px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 0 auto;
-  max-width: 1350px;
+  max-width: 300px;
+  margin: 0px 0px 5px;
 }
 
 .intro p {
     text-align: left;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: auto;
     color: #ffffff;
     line-height: 1.7;
-    margin: 30px auto 0 auto;
-  max-width: 1350px;
+    margin:10px 0px 16px;
+  max-width: 700px;
 }
 
 @keyframes animate {
@@ -152,7 +128,7 @@ body {
 }
 
 
-.linkedin-container {
+/* .linkedin-container {
   margin: 30px auto 0 auto;
   max-width: 1350px;
   }
@@ -180,4 +156,60 @@ body {
   .fa-solid.fa-envelope-circle-check {
     font-size: 40px;
     color: #a3a3a3;
+  } */
+
+  .intro i{
+    color: #f1f1f1;
   }
+
+  .icon-container {
+    justify-content: left;
+    align-items: left; 
+    margin: 25px auto 0 auto;
+    max-width: 1350px;
+    font-size: 25px;
+  }
+
+  .icon-container i {
+    position: relative;
+    color: #f1f1f1;
+    margin: 0 2px;
+  }
+  
+
+.icon:hover {
+  color: #2b40ff;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto 0 auto;
+  max-width: 1350px;
+}
+
+.intro-text {
+  flex: 1;
+  padding: 0px 12px; /* Adjust the spacing between text and image */
+}
+
+.intro img {
+  max-width: 1000px;
+  height: auto;
+  margin-top: 200px;
+}
+
+/* for accessability 
+position: relative;
+overflow: hidden;
+width: 100%;
+max-width: 170px;
+height: 170px;
+max-height: 170px;
+margin: 0 auto;
+border: solid 3px transparent;
+border-radius: 50%;
+background-image: var(--primary-gradient-color), radial-gradient(circle at top left, var(--primary-color), var(--secondary-color));
+background-origin: border-box;
+background-clip: content-box, border-box; */
